@@ -1,7 +1,7 @@
-<h1>Listing Posts</h1>
+<h1>Timeline</h1>
 
 <%= if @live_action in [:new, :edit] do %>
-  <%= live_modal @socket, ChirpWeb.PostLive.FormComponent,
+  <%= live_modal ChirpWeb.PostLive.FormComponent,
     id: @post.id || :new,
     title: @page_title,
     action: @live_action,
