@@ -6,6 +6,7 @@ config :chirp, Chirp.Repo,
   password: "postgres",
   database: "chirp_dev",
   hostname: "localhost",
+  port: 50437,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
